@@ -1,0 +1,69 @@
+Sh2
+===
+
+Syntax Highlighter v2 for Rails (written in JavaScript)
+
+
+Example
+=======
+
+In your layout:
+
+<head>
+  <%= include_syntax_highlighter_assets(:themes => :midnight, :brushes => :all) %>
+  <%= include_syntax_highlighter_assets(:themes => :midnight, :brushes => [:ruby, :shell, :jscript, :sql, :xml, :css]) %>
+</head>
+
+Brushes stands for lang plugins. See PLUGIN_ROOT/assets/javascripts/shBrush* for supported languages.
+Themes located in PLUGIN_ROOT/assets/stylesheets/shTheme*
+
+At the bottom of page (or after all to-be-highlighted-code-blocks) call sh2_highlight_code helper
+
+<%= sh2_highlight_code %> 
+
+
+Code like this will be highlighted:
+
+<pre class="brush: js;"> 
+function onThemeChange(sender)
+{
+  var parts = sender.value.split('|');
+  document.getElementById("theme").href = "Styles/" + parts[1];
+  document.body.style.backgroundColor = parts[0];
+}
+</pre> 
+
+Availible code-brushes and themes:
+
+SH2_BRUSHES = {
+  :bash    => 'Bash',
+  :cpp     => 'Cpp',
+  :csharp  => 'CSharp',
+  :css     => 'Css',
+  :delphi  => 'Delphi',
+  :diff    => 'Diff',
+  :groovy  => 'Groovy',
+  :java    => 'Java',
+  :jscript => 'JScript',
+  :perl    => 'Perl',
+  :php     => 'Php',
+  :plain   => 'Plain',
+  :python  => 'Python',
+  :ruby    => 'Ruby',
+  :scala   => 'Scala',
+  :sql     => 'Sql',
+  :vb      => 'Vb',
+  :xml     => 'Xml'
+}
+
+SH2_THEMES = {
+  :default      => 'Default',
+  :django       => 'Django',
+  :emacs        => 'Emacs',
+  :midnight     => 'Midnight',
+  :rdark        => 'RDark',
+  :fade_to_gray => 'FadeToGrey'
+}
+
+
+Copyright (c) 2009 Antono Vasiljev, released under LGPLv3 license
