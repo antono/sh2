@@ -1,7 +1,8 @@
 Sh2
 ===
 
-Syntax Highlighter v2 for Rails (written in JavaScript)
+Client-side syntax highligher plugin for Rails.
+Based on [SyntaxHighlighter2](http://alexgorbatchev.com/wiki/SyntaxHighlighter) by Alex Gorbatchev.
 
 
 Example
