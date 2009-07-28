@@ -17,9 +17,8 @@ namespace :sh2 do
 
   desc "Updates syntax highlighter assets (css+js) in public dir"
   task :update do
-    # TODO
-    uninstall
-    install
+    Rake::Task['sh2:uninstall'].invoke
+    Rake::Task['sh2:install'].invoke
     puts "\n==> Syntax Highlighter assets updated!"
   end
 
