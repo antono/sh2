@@ -25,8 +25,7 @@ namespace :sh2 do
   desc "Deletes syntax highlighter assets (css+js) from public dir"
   task :uninstall do
     %w{javascripts stylesheets}.each do |atype|
-      dest = File.join(RAILS_ROOT, 'public', atype, 'sh2')
-      FileUtils.rm_rf(dest)
+      FileUtils.rm_rf(File.join(RAILS_ROOT, 'public', atype, 'sh2'))
     end
     puts "\n==> Syntax Highlighter assets uninstalled!"
   end
