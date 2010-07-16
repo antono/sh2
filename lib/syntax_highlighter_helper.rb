@@ -33,10 +33,12 @@ module SyntaxHighlighterHelper
   }
 
   def include_syntax_highlighter_assets(args = {})
+    theme = args[:theme] || :default
+    brushes = args[:brushes] || :all
 
-    if args[:brushes] == :all
+    if brushes == :all
       brushes = SH2_BRUSHES.values
-    elsif args[:brushes].is_a? Array
+    elsif brushes.is_a? Array
       brushes = SH2_BRUSHES.find_all { |key,val| args[:brushes].include? key }.collect { |e| e[1] }
     end
 
@@ -44,7 +46,7 @@ module SyntaxHighlighterHelper
     output << javascript_include_tag('sh2/shCore')
     brushes.each { |brush| output << javascript_include_tag("sh2/shBrush#{brush}") }
     output << stylesheet_link_tag('sh2/shCore')
-    output << stylesheet_link_tag("sh2/shTheme#{SH2_THEMES[args[:theme]]}")
+    output << stylesheet_link_tag("sh2/shTheme#{SH2_THEMES[theme]}")
     output.join("\n")
   end
 

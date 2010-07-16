@@ -11,8 +11,8 @@ Example
 In your layout:
 
 <head>
-  <%= include_syntax_highlighter_assets(:themes => :midnight, :brushes => :all) %>
-  <%= include_syntax_highlighter_assets(:themes => :midnight, :brushes => [:ruby, :shell, :jscript, :sql, :xml, :css]) %>
+  <%= include_syntax_highlighter_assets(:theme => :midnight, :brushes => :all) %>
+  <%= include_syntax_highlighter_assets(:theme => :midnight, :brushes => [:ruby, :shell, :jscript, :sql, :xml, :css]) %>
 </head>
 
 Brushes stands for lang plugins. See PLUGIN_ROOT/assets/javascripts/shBrush* for supported languages.
