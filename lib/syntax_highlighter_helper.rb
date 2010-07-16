@@ -51,7 +51,7 @@ module SyntaxHighlighterHelper
   end
 
   def sh2_highlight_code
-    '<script>SyntaxHighlighter.all();</script>'
+    '<script type="text/javascript">SyntaxHighlighter.all();</script>'
   end
 
 end
