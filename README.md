@@ -7,10 +7,10 @@ Based on [SyntaxHighlighter2](http://alexgorbatchev.com/wiki/SyntaxHighlighter) 
 
 In your layout:
 
-<head>
-  <%= include_syntax_highlighter_assets(:theme => :midnight, :brushes => :all) %>
-  <%= include_syntax_highlighter_assets(:theme => :midnight, :brushes => [:ruby, :shell, :jscript, :sql, :xml, :css]) %>
-</head>
+     <head>
+       <%= include_syntax_highlighter_assets(:theme => :midnight, :brushes => :all) %>
+       <%= include_syntax_highlighter_assets(:theme => :midnight, :brushes => [:ruby, :shell, :jscript, :sql, :xml, :css]) %>
+     </head>
 
 Brushes stands for lang plugins. See PLUGIN\_ROOT/assets/javascripts/shBrush\* for supported languages.
 Themes located in PLUGIN\_ROOT/assets/stylesheets/shTheme\*
@@ -32,7 +32,7 @@ Code like this will be highlighted:
 
 Availible code-brushes and themes:
 
-     SH2\_BRUSHES = {
+     SH2_BRUSHES = {
        :bash    => 'Bash',
        :cpp     => 'Cpp',
        :csharp  => 'CSharp',
@@ -53,13 +53,13 @@ Availible code-brushes and themes:
        :xml     => 'Xml'
      }
 
-     SH2\_THEMES = {
+     SH2_THEMES = {
        :default      => 'Default',
        :django       => 'Django',
        :emacs        => 'Emacs',
        :midnight     => 'Midnight',
        :rdark        => 'RDark',
-       :fade\_to\_gray => 'FadeToGrey'
+       :fade_to_gray => 'FadeToGrey'
      }
 
 
