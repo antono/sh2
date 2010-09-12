@@ -3,7 +3,6 @@
 Client-side syntax highligher for Rails.
 Based on [SyntaxHighlighter2](http://alexgorbatchev.com/wiki/SyntaxHighlighter) by Alex Gorbatchev.
 
-
 ## Example
 
 In your layout:
@@ -33,35 +32,35 @@ Code like this will be highlighted:
 
 Availible code-brushes and themes:
 
-SH2\_BRUSHES = {
-  :bash    => 'Bash',
-  :cpp     => 'Cpp',
-  :csharp  => 'CSharp',
-  :css     => 'Css',
-  :delphi  => 'Delphi',
-  :diff    => 'Diff',
-  :groovy  => 'Groovy',
-  :java    => 'Java',
-  :jscript => 'JScript',
-  :perl    => 'Perl',
-  :php     => 'Php',
-  :plain   => 'Plain',
-  :python  => 'Python',
-  :ruby    => 'Ruby',
-  :scala   => 'Scala',
-  :sql     => 'Sql',
-  :vb      => 'Vb',
-  :xml     => 'Xml'
-}
+     SH2\_BRUSHES = {
+       :bash    => 'Bash',
+       :cpp     => 'Cpp',
+       :csharp  => 'CSharp',
+       :css     => 'Css',
+       :delphi  => 'Delphi',
+       :diff    => 'Diff',
+       :groovy  => 'Groovy',
+       :java    => 'Java',
+       :jscript => 'JScript',
+       :perl    => 'Perl',
+       :php     => 'Php',
+       :plain   => 'Plain',
+       :python  => 'Python',
+       :ruby    => 'Ruby',
+       :scala   => 'Scala',
+       :sql     => 'Sql',
+       :vb      => 'Vb',
+       :xml     => 'Xml'
+     }
 
-SH2\_THEMES = {
-  :default      => 'Default',
-  :django       => 'Django',
-  :emacs        => 'Emacs',
-  :midnight     => 'Midnight',
-  :rdark        => 'RDark',
-  :fade\_to\_gray => 'FadeToGrey'
-}
+     SH2\_THEMES = {
+       :default      => 'Default',
+       :django       => 'Django',
+       :emacs        => 'Emacs',
+       :midnight     => 'Midnight',
+       :rdark        => 'RDark',
+       :fade\_to\_gray => 'FadeToGrey'
+     }
 
 
 Copyright (c) 2009 Antono Vasiljev, released under LGPLv3 license
