@@ -64,3 +64,14 @@ Availible code-brushes and themes:
 
 
 Copyright (c) 2009 Antono Vasiljev, released under LGPLv3 license
+
+
+Haml Example
+
+    Place this wherever you want all the brushes and css files included
+
+    = raw include_syntax_highlighter_assets(:themes => :midnight, :brushes => :all)
+
+    When all code to be highlighted is present call this helper method
+
+    = raw sh2_highlight_code
